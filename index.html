@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage de Imágenes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="collage">
+        <div class="image-wrapper" onclick="playAudio('audio1')">
+            <img src="pic1.jpeg" alt="Imagen 1">
+            <div class="overlay">Te quiero</div>
+        </div>
+        <div class="image-wrapper" onclick="showText('lamento llegar tarde pero..')">
+            <img src="pic2.jpeg" alt="Imagen 2">
+            <div class="overlay">lamento llegar tarde pero..</div>
+        </div>
+        <div class="image-wrapper" onclick="playAudio('audio2')">
+            <img src="pic3.jpeg" alt="Imagen 3">
+            <div class="overlay">Siempre contigo</div>
+        </div>
+        <div class="image-wrapper" onclick="openLink('https://www.youtube.com/watch?v=jpuzp8fzprk')">
+            <img src="pic4.jpeg" alt="Imagen 4">
+            <div class="overlay">Nunca te olvides</div>
+        </div>
+        <div class="image-wrapper" onclick="showText('tenia cosas que resolver asi que')">
+            <img src="pic5.jpeg" alt="Imagen 5">
+            <div class="overlay">tenia cosas que resolver asi que</div>
+        </div>
+        <div class="image-wrapper" onclick="showText('aceptarias salir a cenar')">
+            <img src="pic6.jpeg" alt="Imagen 6">
+            <div class="overlay">aceptarias salir a cenar</div>
+        </div>
+        <div class="image-wrapper" onclick="showText('en el centro historico de Quito')">
+            <img src="pic7.jpeg" alt="Imagen 7">
+            <div class="overlay">en el centro historico de Quito</div>
+        </div>
+        <div class="image-wrapper" onclick="showText('si su respuesta fue si presione las dos siguientes imagenes')">
+            <img src="pic8.jpeg" alt="Imagen 8">
+            <div class="overlay">si su respuesta fue si presione las dos siguientes imagenes</div>
+        </div>
+        <div class="image-wrapper" onclick="openLink('https://www.tiktok.com/@thelrixx/video/7372965071649049861?_r=1&_t=8ob6D3sKWG5')">
+            <img src="pic9.jpeg" alt="Imagen 9">
+            <div class="overlay">Eres todo para mí</div>
+        </div>
+        <div class="image-wrapper" onclick="openLocalPage('page2.html')">
+            <img src="pic10.jpeg" alt="Imagen 10">
+            <div class="overlay">Siempre juntos</div>
+        </div>
+    </div>
+    <div class="cat-header">
+        <div class="header-content">
+            <h1>HAGA CLICK ENCIMA DE CADA IMAGEN</h1>
+        </div>
+        <div class="cat-animation">
+            <img src="gato1.gif" alt="Gatito" id="cat-gif">
+        </div>
+    </div>
+    <audio id="audio1" src="audio1.mp3"></audio>
+    <audio id="audio2" src="audio2.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
