@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.mensaje {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  z-index: 1;
+}
+
+.texto-aparece {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  max-width: 80%;
+  z-index: 2;
+}
+
+
+.contenido-extra {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.gif {
+  width: 300px;
+  height: auto;
+  display: none;
+  margin: 0 auto 140px;
+  opacity: 0.5; /* al inicio se ve grisecito */
+  filter: grayscale(100%); /* hace que se vea como "pausado" */
+  transition: all 0.5s ease;
+}
+
+
+button {
+  background-color: #ff4da6;
+  border: none;
+  padding: 10px 20px;
+  font-size: 26px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff4da6;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ff3399;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  transform: rotate(45deg);
+  animation: float 10s linear infinite;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: -10px;
+  top: 0;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(45deg);
+    opacity: 0;
+  }
+}
